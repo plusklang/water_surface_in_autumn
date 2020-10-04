@@ -1,0 +1,31 @@
+.drop {
+  position: absolute;
+  opacity: 1.0;
+  transition: width 4.0s cubic-bezier(0,1,.29,1),
+              height 4.0s cubic-bezier(0,1,.29,1),
+              opacity 4.0s cubic-bezier(0,1,.29,1),
+              box-shadow 4.0s cubic-bezier(0,1,.29,1);
+
+  width: 10px;
+  height: 10px;
+
+  //border: 10px solid #ddd8cf;
+  border-radius: 50%;
+  background: transparent;
+  transform: translate3d(-50%, -50%, 0);
+  box-shadow: 5px 0 0 #ddd8cf,
+              inset 5px 0 0 #ddd8cf,
+              -10px 0 0 #0e0b03,
+              inset -10px 0 0 #0e0b03;
+
+
+  &.is--fallen {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+    box-shadow: 12px 0 5px #ddd8cf,
+    inset 12px 0 5px #ddd8cf,
+    -10px 0 5px #0e0b03,
+    inset -10px 0 5px #0e0b03;
+  }
+}
