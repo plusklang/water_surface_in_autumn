@@ -1,6 +1,6 @@
 $dropTimeSize: 4.0s;
 $dropTimeSize2: 5.0s;
-$dropTimeSize3: 5.0s;
+$dropTimeSize3: 6.0s;
 $dropTimeOpacity: 2.5s;
 $dropTimeOpacity2: 2.0s;
 $dropTimeOpacity3: 1.5s;
@@ -27,8 +27,8 @@ $dropTimeOpacity3: 1.5s;
 
 
   &.is--fallen {
-    width: 500px;
-    height: 500px;
+    width: 570px;
+    height: 570px;
     opacity: 0;
     box-shadow: 12px 0 5px #ddd8cf,
     inset 12px 0 5px #ddd8cf,

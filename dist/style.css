@@ -21,8 +21,8 @@ body {
   transform: translate3d(-50%, -50%, 0);
   box-shadow: 5px 0 0 #ddd8cf, inset 5px 0 0 #ddd8cf, -10px 0 0 #0e0b03, inset -10px 0 0 #0e0b03; }
   .drop.is--fallen {
-    width: 500px;
-    height: 500px;
+    width: 570px;
+    height: 570px;
     opacity: 0;
     box-shadow: 12px 0 5px #ddd8cf, inset 12px 0 5px #ddd8cf, -15px 0 5px #0e0b03, inset -10px 0 5px #0e0b03; }
   .drop-2 {
@@ -33,7 +33,7 @@ body {
       height: 350px; }
   .drop-3 {
     opacity: 0.07;
-    transition: width 5s cubic-bezier(0, 1, 0.29, 1), height 5s cubic-bezier(0, 1, 0.29, 1), opacity 1.5s cubic-bezier(0, 1, 0.29, 1), box-shadow 5s cubic-bezier(0, 1, 0.29, 1); }
+    transition: width 6s cubic-bezier(0, 1, 0.29, 1), height 6s cubic-bezier(0, 1, 0.29, 1), opacity 1.5s cubic-bezier(0, 1, 0.29, 1), box-shadow 6s cubic-bezier(0, 1, 0.29, 1); }
     .drop-3.is--fallen {
       width: 150px;
       height: 150px; }
