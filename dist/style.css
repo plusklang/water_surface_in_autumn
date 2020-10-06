@@ -1,0 +1,27 @@
+p {
+  font-size: 16px;
+  color: #ffc; }
+
+.surface {
+  background: #1b1506;
+  width: 100vw;
+  height: 100vh; }
+
+.drop {
+  position: absolute;
+  opacity: 1.0;
+  transition: width 4s cubic-bezier(0, 1, 0.29, 1), height 4s cubic-bezier(0, 1, 0.29, 1), opacity 4s cubic-bezier(0, 1, 0.29, 1), box-shadow 4s cubic-bezier(0, 1, 0.29, 1);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: transparent;
+  transform: translate3d(-50%, -50%, 0);
+  box-shadow: 5px 0 0 #ddd8cf, inset 5px 0 0 #ddd8cf, -10px 0 0 #0e0b03, inset -10px 0 0 #0e0b03; }
+  .drop.is--fallen {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+    box-shadow: 12px 0 5px #ddd8cf, inset 12px 0 5px #ddd8cf, -10px 0 5px #0e0b03, inset -10px 0 5px #0e0b03; }
+
+* {
+  font-weight: bold; }
