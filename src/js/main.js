@@ -11,24 +11,32 @@ function surfaceClicked(e){
     const posX = e.clientX
     const posY = e.clientY
 
-    let $drop = getDrop(posX, posY);
 
     $surface.querySelectorAll('.drop').forEach(($singleDrop, key) => {
         $surface.removeChild($singleDrop)
     })
 
-    $surface.appendChild($drop);
-
-    setTimeout(() => {
-        $drop.classList.add('is--fallen');
-    },10);
+    appendDrop(posX, posY, 1);
+    appendDrop(posX, posY,  2);
+    appendDrop(posX, posY,  3);
 
 }
 
-function getDrop(posX, posY) {
+function appendDrop(posX, posY, index) {
+    const $drop = getDrop(posX, posY, index)
+    setTimeout(() => {
+        $surface.appendChild($drop);
+        setTimeout(() => {
+            $drop.classList.add('is--fallen');
+        },10);
+    }, 80 * index);
+}
+
+function getDrop(posX, posY, index) {
     let $drop = $d.createElement('div');
 
-    $drop.classList.add('drop')
+    $drop.classList.add('drop');
+    $drop.classList.add('drop' + (index ? '-' + index : ''));
 
     $drop.style.top = posY + 'px';
     $drop.style.left = posX + 'px';
