@@ -19,6 +19,7 @@ function surfaceClicked(e){
     appendDrop(posX, posY, 1);
     appendDrop(posX, posY,  2);
     appendDrop(posX, posY,  3);
+    appendDrop(posX, posY,  4);
 
 }
 
@@ -28,8 +29,8 @@ function appendDrop(posX, posY, index) {
         $surface.appendChild($drop);
         setTimeout(() => {
             $drop.classList.add('is--fallen');
-        },10);
-    }, 80 * index);
+        },40);
+    }, 30 * index);
 }
 
 function getDrop(posX, posY, index) {
