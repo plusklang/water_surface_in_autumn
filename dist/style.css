@@ -19,12 +19,12 @@ body {
   border-radius: 50%;
   background: transparent;
   transform: translate3d(-50%, -50%, 0);
-  box-shadow: -13px 0px 9px 0px #0e0b03, inset -9px 0px 9px 4px #0e0b03, 16px 0 5px -7px #ddd8cf, inset 16px 0 5px -7px #ddd8cf; }
+  box-shadow: -13px 0px 9px 0px black, inset -9px 0px 9px 4px black, 16px 0 5px -7px #eae1cb, inset 16px 0 5px -7px #eae1cb; }
   .drop.is--fallen {
     width: 580px;
     height: 580px;
     opacity: 0;
-    box-shadow: -13px 0px 9px 0px #0e0b03, inset -9px 0px 9px 4px #0e0b03, 16px 0 5px -7px #ddd8cf, inset 16px 0 5px -7px #ddd8cf; }
+    box-shadow: -13px 0px 9px 0px black, inset -9px 0px 9px 4px black, 16px 0 5px -7px #eae1cb, inset 16px 0 5px -7px #eae1cb; }
   .drop-2 {
     opacity: 0.3;
     transition: width 4s cubic-bezier(0, 1, 0.29, 1), height 4s cubic-bezier(0, 1, 0.29, 1), opacity 2s cubic-bezier(0, 1, 0.29, 1), box-shadow 4s cubic-bezier(0, 1, 0.29, 1); }
@@ -43,6 +43,12 @@ body {
     .drop-4.is--fallen {
       width: 400px;
       height: 400px; }
+  .drop-5 {
+    opacity: 0.03;
+    transition: width 4s cubic-bezier(0, 1, 0.29, 1), height 4s cubic-bezier(0, 1, 0.29, 1), opacity 1.5s cubic-bezier(0, 1, 0.29, 1), box-shadow 4s cubic-bezier(0, 1, 0.29, 1); }
+    .drop-5.is--fallen {
+      width: 340px;
+      height: 340px; }
 
 * {
   font-weight: bold; }

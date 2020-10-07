@@ -21,7 +21,7 @@ $dropTimeOpacity3: 1.5s;
   //border: 1px solid red;
   background: transparent;
   transform: translate3d(-50%, -50%, 0);
-  box-shadow: -13px 0px 9px 0px #0e0b03, inset -9px 0px 9px 4px #0e0b03, 16px 0 5px -7px #ddd8cf, inset 16px 0 5px -7px #ddd8cf;
+  box-shadow: -13px 0px 9px 0px $dropShadowColor, inset -9px 0px 9px 4px $dropShadowColor, 16px 0 5px -7px $dropHighlightColor, inset 16px 0 5px -7px $dropHighlightColor;
 
 
   &.is--fallen {
@@ -29,7 +29,7 @@ $dropTimeOpacity3: 1.5s;
     height: 580px;
     opacity: 0;
     //box-shadow: 16px 0 5px -7px #ddd8cf, inset 16px 0 5px -7px #ddd8cf;
-    box-shadow: -13px 0px 9px 0px #0e0b03, inset -9px 0px 9px 4px #0e0b03, 16px 0 5px -7px #ddd8cf, inset 16px 0 5px -7px #ddd8cf;
+    box-shadow: -13px 0px 9px 0px $dropShadowColor, inset -9px 0px 9px 4px $dropShadowColor, 16px 0 5px -7px $dropHighlightColor, inset 16px 0 5px -7px $dropHighlightColor;
   }
 
   &-2 {
@@ -64,6 +64,17 @@ $dropTimeOpacity3: 1.5s;
     &.is--fallen {
       width: 400px;
       height: 400px;
+    }
+  }
+  &-5 {
+    opacity: 0.03;
+    transition: width $dropTimeSize cubic-bezier(0,1,.29,1),
+    height $dropTimeSize cubic-bezier(0,1,.29,1),
+    opacity $dropTimeOpacity3 cubic-bezier(0,1,.29,1),
+    box-shadow $dropTimeSize cubic-bezier(0,1,.29,1);
+    &.is--fallen {
+      width: 340px;
+      height: 340px;
     }
   }
 }
